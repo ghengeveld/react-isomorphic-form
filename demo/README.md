@@ -7,6 +7,7 @@ client-side.
 The client-side JavaScript is intentionally slow to load (it's recompiled on
 each request) in order to demonstrate the form's functionality while loading.
 You should be able to input data while the page is still loading, and the form
-should retain those values when JavaScript kicks in.*
+should retain those values when JavaScript kicks in.<sup id="a1">[1](#f1)</sup>
 
-* Due to an issue in React, this doesn't work for textareas.
+<sup id="f1">[1](#a1)</sup> Due to an issue in React, this doesn't work for
+textareas.
