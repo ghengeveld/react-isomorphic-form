@@ -1,13 +1,17 @@
 # react-isomorphic-form
 [![npm version][npm shield]][npm url]
-[npm shield]: https://img.shields.io/npm/v/react-isomorphic-form.svg?maxAge=2592000
-[npm url]: https://www.npmjs.com/package/react-isomorphic-form
+[![Build status][travis shield]][travis url]
 
 `react-isomorphic-form` is a set of React components that allow you to easily
 create isomorphic forms in React. An isomorphic form is initially rendered on
 the server (with ReactDOMServer.renderToString), providing full functionality
 even when JavaScript is not (yet) loaded on the client. Once JavaScript is
 loaded, the form is enhanced to provide richer interactivity.
+
+[npm shield]: https://img.shields.io/npm/v/react-isomorphic-form.svg?maxAge=2592000
+[npm url]: https://www.npmjs.com/package/react-isomorphic-form
+[travis shield]: https://travis-ci.org/ghengeveld/react-isomorphic-form.svg?branch=master
+[travis url]: https://travis-ci.org/ghengeveld/react-isomorphic-form
 
 ## Installation
 
