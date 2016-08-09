@@ -1,4 +1,5 @@
 # react-isomorphic-form
+
 [![npm version][npm shield]][npm url]
 [![Build status][travis shield]][travis url]
 
@@ -7,6 +8,8 @@ create isomorphic forms in React. An isomorphic form is initially rendered on
 the server (with ReactDOMServer.renderToString), providing full functionality
 even when JavaScript is not (yet) loaded on the client. Once JavaScript is
 loaded, the form is enhanced to provide richer interactivity.
+`react-isomorphic-form` works well with React Router, which also supports
+isomorphism (e.g. its Link component does).
 
 [npm shield]: https://img.shields.io/npm/v/react-isomorphic-form.svg?maxAge=2592000
 [npm url]: https://www.npmjs.com/package/react-isomorphic-form
@@ -44,6 +47,8 @@ form submission (including page transition). You can avoid this by providing a
 polyfill.
 
 ## Example
+
+Check out the [demo app](demo) for a more elaborate example using React Router.
 
 ```js
 import { Form, Input, Label } from 'react-isomorphic-form'
