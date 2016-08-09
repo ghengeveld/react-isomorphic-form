@@ -1,0 +1,5 @@
+--colors
+--require babel-core/register
+--require source-map-support/register
+--require test/setup.js
+test/specs/**/*.spec.js

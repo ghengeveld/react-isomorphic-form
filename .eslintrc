@@ -1,0 +1,21 @@
+{
+  "env": {
+    "browser": true,
+    "mocha": true,
+    "node": true
+  },
+  "extends": "airbnb",
+  "globals": {
+    "expect": false,
+    "sinon": false
+  },
+  "parser": "babel-eslint",
+  "rules": {
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+    "max-len": ["error", 120],
+    "no-unused-vars": ["error", { "varsIgnorePattern": "_+" }],
+    "no-use-before-define": ["error", { "functions": false }],
+    "react/jsx-filename-extension": ["error", { "extensions": [".js"] }],
+    "semi": ["error", "never"]
+  }
+}
