@@ -11,3 +11,12 @@ should retain those values when JavaScript kicks in.<sup id="a1">[1](#f1)</sup>
 
 <sup id="f1">[1](#a1)</sup> Due to an issue in React, this doesn't work for
 textareas.
+
+## Getting started
+
+```shell
+npm install
+npm start
+```
+
+It should now be running at [http://localhost:8000](http://localhost:8000).

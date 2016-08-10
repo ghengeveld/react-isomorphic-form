@@ -11,10 +11,19 @@ loaded, the form is enhanced to provide richer interactivity.
 `react-isomorphic-form` works well with React Router, which also supports
 isomorphism (e.g. its Link component does).
 
+> **Don't you mean "universal"?**
+>
+> Yes and no. The components provided by `react-isomorphic-form` are universal
+> in the sense that their source code is suitable to be executed both client-
+> and server-side. However that is not the goal of this project. The goal is to
+> provide a seamless transition from server-rendered HTML to client-rendered
+> DOM without losing state, which is [what we call isomorphism][isomorphism].
+
 [npm shield]: https://img.shields.io/npm/v/react-isomorphic-form.svg?maxAge=2592000
 [npm url]: https://www.npmjs.com/package/react-isomorphic-form
 [travis shield]: https://travis-ci.org/ghengeveld/react-isomorphic-form.svg?branch=master
 [travis url]: https://travis-ci.org/ghengeveld/react-isomorphic-form
+[isomorphism]: https://medium.com/@ghengeveld/isomorphism-vs-universal-javascript-4b47fb481beb
 
 ## Installation
 
