@@ -31,7 +31,6 @@ export default class Home extends React.Component {
     response.json().then(data => console.log(data))
   }
   handleChange(change, getFormData) {
-    console.log(change)
     this.setState({ formData: getFormData() })
   }
   render() {
@@ -44,6 +43,7 @@ export default class Home extends React.Component {
           <div className="col-xs-8">
             <Form
               name="subscribe" action="/subscribe" method="post"
+              onInit={this.handleChange}
               onChange={this.handleChange}
               beforeSubmit={this.beforeSubmit}
               onSuccess={this.handleSuccess}

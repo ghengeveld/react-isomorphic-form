@@ -34,17 +34,20 @@ export default class Form extends React.Component {
       return acc
     }, {})
   }
-  register(name, value, initial = value) {
+  register(fieldName, value, initial = value) {
+    const { onInit = () => {} } = this.props
     const defineOnce = (currentValue, newValue) => (currentValue === undefined ? newValue : currentValue)
-    this.setState(state => (state[name] ? ({
-      [name]: {
-        ...state[name],
-        initial: defineOnce(state[name].initial, initial),
-        value: defineOnce(state[name].value, value),
+    this.setState(state => (state[fieldName] ? ({
+      [fieldName]: {
+        ...state[fieldName],
+        initial: defineOnce(state[fieldName].initial, initial),
+        value: defineOnce(state[fieldName].value, value),
       },
     }) : ({
-      [name]: { initial, value },
-    })))
+      [fieldName]: { initial, value },
+    })),
+      () => onInit({ fieldName, value, initial }, this.getFormData)
+    )
   }
   change(fieldName, newValue) {
     const { onChange = () => {} } = this.props
@@ -84,7 +87,15 @@ export default class Form extends React.Component {
     })
   }
   render() {
-    const { children, onChange: _, beforeSubmit: __, onSuccess: ___, onFailure: ____, ...props } = this.props
+    const {
+      children,
+      onInit: _,
+      onChange: __,
+      beforeSubmit: ___,
+      onSuccess: ____,
+      onFailure: _____,
+      ...props,
+    } = this.props
     return <form {...props} onSubmit={this.submit} onReset={this.reset}>{children}</form>
   }
 }
@@ -94,6 +105,7 @@ Form.propTypes = {
   action: React.PropTypes.string.isRequired,
   method: React.PropTypes.string.isRequired,
   children: React.PropTypes.node,
+  onInit: React.PropTypes.func,
   onChange: React.PropTypes.func,
   beforeSubmit: React.PropTypes.func,
   onSuccess: React.PropTypes.func,
