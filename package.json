@@ -2,6 +2,7 @@
   "name": "react-isomorphic-form",
   "version": "1.1.0",
   "description": "A set of React components to easily create isomorphic forms",
+  "keywords": ["react", "isomorphic", "form", "universal", "components"],
   "main": "lib/index.js",
   "scripts": {
     "bundle": "rimraf lib/* && babel src -d lib",
@@ -10,14 +11,19 @@
     "precommit": "npm run lint && npm test",
     "prepublish": "npm run bundle"
   },
-  "keywords": [
-    "react",
-    "isomorphic",
-    "forms",
-    "universal"
-  ],
-  "author": "Gert Hengeveld <info@ghengeveld.nl> (https://github.com/ghengeveld)",
+  "directories": {
+    "test": "test"
+  },
   "license": "ISC",
+  "author": "Gert Hengeveld <info@ghengeveld.nl> (https://github.com/ghengeveld)",
+  "homepage": "https://github.com/ghengeveld/react-isomorphic-form#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghengeveld/react-isomorphic-form.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ghengeveld/react-isomorphic-form/issues"
+  },
   "dependencies": {
     "babel-runtime": "^6.11.6"
   },
