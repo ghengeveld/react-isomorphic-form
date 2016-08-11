@@ -52,9 +52,12 @@ app.use((req, res) => {
     if (renderProps) {
       return res.status(200).send(renderDocument(
         <html lang="en">
-          <Head title="Home" />
+          <Head title="Home" stylesheets={['https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css']} />
           <Body scripts={['app.js']}>
-            <div id="root" dangerouslySetInnerHTML={renderAppHtml(<RouterContext {...renderProps} />)} />
+            <div
+              id="root" className="container"
+              dangerouslySetInnerHTML={renderAppHtml(<RouterContext {...renderProps} />)}
+            />
           </Body>
         </html>
       ))
