@@ -4,7 +4,7 @@
   "description": "Demo app for react-isomorphic-form",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./index.js",
+    "start": "nodemon --watch ../ ./index.js",
     "lint": "eslint src/*.js"
   },
   "author": "Gert Hengeveld <info@ghengeveld.nl> (https://github.com/ghengeveld)",
