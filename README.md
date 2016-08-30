@@ -19,7 +19,7 @@ isomorphism (e.g. its Link component does).
 > provide a seamless transition from server-rendered HTML to client-rendered
 > DOM without losing state, which is [what we call isomorphism][isomorphism].
 
-[npm shield]: https://img.shields.io/npm/v/react-isomorphic-form.svg?maxAge=2592000
+[npm shield]: https://img.shields.io/npm/v/react-isomorphic-form.svg
 [npm url]: https://www.npmjs.com/package/react-isomorphic-form
 [travis shield]: https://travis-ci.org/ghengeveld/react-isomorphic-form.svg?branch=master
 [travis url]: https://travis-ci.org/ghengeveld/react-isomorphic-form
