@@ -17,7 +17,7 @@ import Nav from '../Nav'
 export default class Home extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { formData: {} }
+    this.state = { formData: {}, responseData: undefined }
     this.beforeSubmit = this.beforeSubmit.bind(this)
     this.handleSuccess = this.handleSuccess.bind(this)
     this.handleChange = this.handleChange.bind(this)
@@ -27,7 +27,7 @@ export default class Home extends React.Component {
     return data
   }
   handleSuccess(response) {
-    response.json().then(data => console.log(data))
+    response.json().then(data => this.setState({ responseData: data }))
   }
   handleChange(change, getFormData) {
     this.setState({ formData: getFormData() })
@@ -118,6 +118,8 @@ export default class Home extends React.Component {
           <div className="col-xs-4">
             <h4>Form data:</h4>
             <pre>{JSON.stringify(this.state.formData, null, 2)}</pre>
+            <h4>Response data:</h4>
+            <pre>{JSON.stringify(this.state.responseData, null, 2)}</pre>
           </div>
         </div>
       </div>
