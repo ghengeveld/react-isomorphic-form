@@ -18,8 +18,7 @@
     "react": "^15.3.0",
     "react-dom": "^15.3.0",
     "react-isomorphic-form": "^1.1.0",
-    "react-router": "^2.6.1",
-    "source-map-support": "^0.4.2"
+    "react-router": "^2.6.1"
   },
   "devDependencies": {
     "babel-eslint": "^6.1.2",
