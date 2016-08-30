@@ -10,8 +10,7 @@ import {
   Radio,
   Select,
   Textarea,
-} from 'react-isomorphic-form'
-// } from '../../../../src'
+} from '../../../../src'
 
 import Nav from '../Nav'
 
