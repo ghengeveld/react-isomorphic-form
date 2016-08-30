@@ -13,7 +13,7 @@ import Body from './components/document/Body'
 import { renderDocument, renderAppHtml } from './utils/rendering'
 
 const app = express()
-const server = app.listen(8000, () => {
+const server = app.listen(process.env.PORT || 8000, () => {
   console.log(`Listening on port ${server.address().port}`) // eslint-disable-line no-console
 })
 
