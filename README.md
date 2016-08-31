@@ -57,8 +57,6 @@ polyfill.
 
 ## Example
 
-Check out the [demo app](demo) for a more elaborate example using React Router.
-
 ```js
 import { Form, Input, Label } from 'react-isomorphic-form'
 
@@ -70,6 +68,10 @@ import { Form, Input, Label } from 'react-isomorphic-form'
   <button type="submit">Subscribe</button>
 </Form>
 ```
+
+> Check out the [demo app] for a more elaborate example using React Router.
+
+[demo app]: https://github.com/ghengeveld/react-isomorphic-form-demo
 
 `react-isomorphic-form` provides a set of React components, each of which is a
 thin wrapper around a native HTML form (input) element. Any custom props
