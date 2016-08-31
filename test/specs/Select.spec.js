@@ -45,12 +45,6 @@ describe('Select', () => {
     expect(select.prop('className')).to.equal('fancy')
   })
 
-  it('should trigger the ref callback', () => {
-    const ref = sinon.spy()
-    mountForm(<Select name="val" ref={ref} />)
-    expect(ref).to.have.been.called()
-  })
-
   it('should also accept options as an array', () => {
     const select = mountForm(<Select name="val" options={['one', 'two', 'three']} />).find('select')
     expect(select.find('option').length).to.equal(3)

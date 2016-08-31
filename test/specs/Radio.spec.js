@@ -35,12 +35,6 @@ describe('Radio', () => {
     expect(input.prop('className')).to.equal('fancy')
   })
 
-  it('should trigger the ref callback', () => {
-    const ref = sinon.spy()
-    mountForm(<Radio name="val" value="yes" ref={ref} />)
-    expect(ref).to.have.been.called()
-  })
-
   describe('when changing selection', () => {
     it('should update its value, replacing the initial value', () => {
       const inputs = mountForm(

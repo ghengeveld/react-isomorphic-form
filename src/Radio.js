@@ -27,9 +27,8 @@ export default class Radio extends React.Component {
   }
   ref(element) {
     const { form } = this.context
-    const { name, initial, ref } = this.props
+    const { name, initial } = this.props
     form.register(name, element && element.checked ? element.value : undefined, initial)
-    ref(element)
   }
   render() {
     const { initial: _, ...props } = this.props
@@ -51,12 +50,10 @@ Radio.propTypes = {
   value: React.PropTypes.string.isRequired,
   id: React.PropTypes.string,
   initial: React.PropTypes.string,
-  ref: React.PropTypes.func,
   onChange: React.PropTypes.func,
 }
 
 Radio.defaultProps = {
-  ref: () => {},
   onChange: () => {},
 }
 

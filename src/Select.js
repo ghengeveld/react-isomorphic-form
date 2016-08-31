@@ -27,9 +27,8 @@ export default class Select extends React.Component {
   }
   ref(element) {
     const { form } = this.context
-    const { name, initial, ref } = this.props
+    const { name, initial } = this.props
     form.register(name, element ? this.getSelection(element) : undefined, initial)
-    ref(element)
   }
   renderOptions(options) {
     return Array.isArray(options)
@@ -60,13 +59,11 @@ Select.propTypes = {
   initial: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.array]),
   options: React.PropTypes.oneOfType([React.PropTypes.object, React.PropTypes.array]),
   children: React.PropTypes.node,
-  ref: React.PropTypes.func,
   onChange: React.PropTypes.func,
 }
 
 Select.defaultProps = {
   multiple: false,
-  ref: () => {},
   onChange: () => {},
 }
 

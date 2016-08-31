@@ -35,12 +35,6 @@ describe('Checkbox', () => {
     expect(input.prop('className')).to.equal('fancy')
   })
 
-  it('should trigger the ref callback', () => {
-    const ref = sinon.spy()
-    mountForm(<Checkbox name="val" ref={ref} />)
-    expect(ref).to.have.been.called()
-  })
-
   describe('when changing selection', () => {
     it('should update its value, replacing the initial value', () => {
       const input = mountForm(<Checkbox name="val" initial={!!true} />).find('input')

@@ -23,9 +23,8 @@ export default class Checkbox extends React.Component {
   }
   ref(element) {
     const { form } = this.context
-    const { name, initial, ref } = this.props
+    const { name, initial } = this.props
     form.register(name, element ? element.checked : undefined, initial)
-    ref(element)
   }
   render() {
     const { initial: _, ...props } = this.props
@@ -46,13 +45,11 @@ Checkbox.propTypes = {
   name: React.PropTypes.string.isRequired,
   id: React.PropTypes.string,
   initial: React.PropTypes.bool,
-  ref: React.PropTypes.func,
   onChange: React.PropTypes.func,
 }
 
 Checkbox.defaultProps = {
   initial: false,
-  ref: () => {},
   onChange: () => {},
 }
 

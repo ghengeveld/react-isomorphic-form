@@ -35,12 +35,6 @@ describe('Textarea', () => {
     expect(textarea.prop('className')).to.equal('fancy')
   })
 
-  it('should trigger the ref callback', () => {
-    const ref = sinon.spy()
-    mountForm(<Textarea name="val" ref={ref} />)
-    expect(ref).to.have.been.called()
-  })
-
   describe('when entering data', () => {
     it('should update its value, replacing the initial value', () => {
       const textarea = mountForm(<Textarea name="val" initial="Init" />).find('textarea')

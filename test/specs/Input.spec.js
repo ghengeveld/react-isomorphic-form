@@ -40,12 +40,6 @@ describe('Input', () => {
     expect(input.prop('className')).to.equal('fancy')
   })
 
-  it('should trigger the ref callback', () => {
-    const ref = sinon.spy()
-    mountForm(<Input name="val" ref={ref} />)
-    expect(ref).to.have.been.called()
-  })
-
   describe('when entering data', () => {
     it('should update its value, replacing the initial value', () => {
       const input = mountForm(<Input name="val" initial="Init" />).find('input')
