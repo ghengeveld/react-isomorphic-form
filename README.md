@@ -112,3 +112,12 @@ Inputs:
 Helpers:
 - `Label`: wrapper for `<label>`, binds to related input
 - `Value`: wrapper for `<span>`, prints current value of a field
+
+## Live demo
+
+A live demo is available at http://react-isomorphic-form-demo.herokuapp.com/
+
+It might be slow to initially boot as it runs on a free Heroku Dyno which goes
+to sleep after 30 minutes of inactivity.
+
+Source code: https://github.com/ghengeveld/react-isomorphic-form-demo
