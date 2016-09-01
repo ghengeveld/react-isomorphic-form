@@ -2,6 +2,7 @@
 
 [![npm version][npm shield]][npm url]
 [![Build status][travis shield]][travis url]
+[![Live demo][demo badge]][demo url]
 
 `react-isomorphic-form` is a set of React components that allow you to easily
 create isomorphic forms in React. An isomorphic form is initially rendered on
@@ -23,6 +24,8 @@ isomorphism (e.g. its Link component does).
 [npm url]: https://www.npmjs.com/package/react-isomorphic-form
 [travis shield]: https://travis-ci.org/ghengeveld/react-isomorphic-form.svg?branch=master
 [travis url]: https://travis-ci.org/ghengeveld/react-isomorphic-form
+[demo badge]: https://img.shields.io/badge/demo-available-ff69b4.svg
+[demo url]: http://react-isomorphic-form-demo.herokuapp.com/
 [isomorphism]: https://medium.com/@ghengeveld/isomorphism-vs-universal-javascript-4b47fb481beb
 
 ## Installation
